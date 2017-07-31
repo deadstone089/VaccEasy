@@ -1,8 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" %>
-    <%@ include file="header.jsp" %>
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<%@ include file="header.jsp" %>
 
 		<!-- Slider
 		============================================= -->
@@ -455,26 +451,26 @@
 						<div class="bgcolor col-padding">
 							<h2>GIVE YOUR FEEDBACKS</h2>
 							<div id="medical-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-							<form class="nobottommargin" id="template-medical-form" name="template-medical-form" action="demos/medical/include/appointment.php" method="post">
+							<form class="nobottommargin" id="template-medical-form" name="template-medical-form" action="/sendFeedback" method="post">
 								<div class="col_half">
-									<label for="template-medical-name">Name:</label>
-									<input type="text" id="template-medical-name" name="template-medical-name" placeholder="Enter your Name" class="form-control not-dark required" value="">
+									<label for="template-medical-name">First Name:</label>
+									<input type="text" id="template-medical-name" name="FirstName" placeholder="Enter your First Name" class="form-control not-dark required" value="">
 								</div>
 								<div class="col_half col_last">
-									<label for="template-medical-phone">Phone:</label>
-									<input type="text" id="template-medical-phone" name="template-medical-phone" placeholder="Enter your Phone no." class="form-control not-dark required" value="">
+									<label for="template-medical-phone">Last Name</label>
+									<input type="text" id="template-medical-phone" name="LastName" placeholder="Enter your Last Name" class="form-control not-dark required" value="">
 								</div>
-								<div class="clear"></div>
+								<div class="clear"></div> 	
 								<div class="col_full">
 									<label for="template-medical-email">Email Address:</label>
-									<input type="email" id="template-medical-email" name="template-medical-email" placeholder="eg.<abcxyz@example.com>" class="form-control not-dark required" value="">
+									<input type="email" id="template-medical-email" name="Email1" placeholder="eg.<abcxyz@example.com>" class="form-control not-dark required" value="">
 								</div>
 								
 								<div class="clear"></div>
 								<div class="col_two_fifth nobottommargin">
 									<div class="col_full">
-										<label for="template-medical-appoint-date">Appointment Date:</label>
-										<input type="text" id="template-medical-appoint-date" name="template-medical-appoint-date" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
+										<label for="template-medical-appoint-date">Phone Number:</label>
+										<input type="text" id="template-medical-appoint-date" name="Number1" class="form-control not-dark required" value="" placeholder="Enter your Phone no.">
 									</div>
 											
 										<div class="col_full nobottommargin">
@@ -491,7 +487,7 @@
 								</div>
 								<div class="col_three_fifth nobottommargin col_last">
 									<label for="template-medical-message">Your Feedback:</label>
-									<textarea id="template-medical-message" name="template-medical-message" placeholder="start writing from here" class="form-control not-dark required" cols="30" rows="4"></textarea>
+									<textarea id="template-medical-message" name="TextFeedback" placeholder="start writing from here" class="form-control not-dark required" cols="30" rows="4"></textarea>
 								</div>
 								<div class="clear"></div>
 								<div class="col_full hidden">
@@ -508,7 +504,4 @@
 				</div>
 				
 				</section>
-				
-</body>
-</html>
  <%@ include file="footer.jsp" %>

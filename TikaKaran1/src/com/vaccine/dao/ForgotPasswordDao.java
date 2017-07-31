@@ -1,19 +1,22 @@
 package com.vaccine.dao;
 
+import com.vaccine.entity.ParentDetailsEntity;
 import static com.vaccine.service.OfyService.ofy;
-
-import com.vaccine.entity.ForgotPasswordEntity;
-
 public class ForgotPasswordDao {
 
-	public static void save(String email, String pass) {
+	public boolean check(String email, long phone) {
 		
-		ForgotPasswordEntity th1 = ofy().load().type(ForgotPasswordEntity.class).id(email).now();
-		ForgotPasswordEntity user = new ForgotPasswordEntity(email, pass,th1.mob);
-		ofy().save().entities(user);
-		ofy().clear();
-		System.out.println("Successful");
+		ParentDetailsEntity pd=ofy().load().type(ParentDetailsEntity.class).id(email).now();
+			if(pd!=null)
+			{
+				if(pd.mobno==phone)
+					return true;
+				else
+					return false;
+			}
 		
+			else
+				return false;
 	}
 
 }

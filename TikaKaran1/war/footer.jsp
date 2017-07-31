@@ -88,7 +88,7 @@
 					<div class="col_one_third">
 
 						<div class="widget clearfix">
-							<h4>Testimonials</h4>
+							<h4> Testimonials</h4>
 
 							<div class="fslider testimonial no-image nobg noborder noshadow nopadding" data-animation="slide" data-arrows="false">
 								<div class="flexslider">
@@ -162,23 +162,22 @@ Bill Nye the Science Guy
 
 							<h4>Ask Your Question</h4>
 
-							<div class="quick-contact-form-result"></div>
+							 <!-- <div class="quick-contact-form-result"></div> --> 
 
-							<form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+							<form id="quick-contact-form" name="quick-contact-form" action="/AskQuestion" method="post" class="quick-contact-form nobottommargin">
 
-								<div class="form-process"></div>
+								 <div class="form-process"></div>
 
 								<div class="input-group divcenter">
 									<span class="input-group-addon"><i class="icon-user"></i></span>
-									<input type="text" class="required form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
+									<input type="text" class="required form-control input-block-level" id="quick-contact-form-name" name="UserName" value="" placeholder="Full Name" />
 								</div>
 								<div class="input-group divcenter">
 									<span class="input-group-addon"><i class="icon-email2"></i></span>
-									<input type="text" class="required form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
+									<input type="text" class="required form-control email input-block-level" id="quick-contact-form-email" name="email2" value="" placeholder="Email Address" />
 								</div>
-								<textarea class="required form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Message"></textarea>
-								<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
-								<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="btn btn-danger nomargin" value="submit">Send Email</button>
+								<textarea class="required form-control input-block-level short-textarea" id="quick-contact-form-message" name="AskQuestion1" rows="4" cols="30" placeholder="Message"></textarea>
+								<input type="submit" id="quick-contact-form-submit"  class="btn btn-danger nomargin" value="submit">
 
 							</form>
 
@@ -221,11 +220,10 @@ Bill Nye the Science Guy
 	
 <!-- Footer Scripts
 	============================================= -->
-<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-		
 
+		<script type="text/javascript" src="js/jquery.js"></script>		
+	<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
 
 </body>
 </html>

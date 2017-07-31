@@ -19,7 +19,7 @@ public class LoginController extends HttpServlet
 
 	public void doPost(HttpServletRequest req,HttpServletResponse resp)throws IOException,ServletException
 	{
-		resp.setContentType("text/plain");
+		
 		LoginService loginService=new LoginService();
 		
 		

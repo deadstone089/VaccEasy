@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 
@@ -129,8 +130,8 @@
 												<li><a href="#"><div>Vacci Reminder</div></a></li>
 												<li><a href="schedule.jsp"><div>Vacci Scheduler</div></a></li>
 												<li><a href="bmi.jsp"><div>BMI Calculator</div></a></li>
-												<li><a href="#"><div>Cunsultancy</div></a></li>
-												<li><a href="#"><div>24 x 7 Availability</div></a></li>
+												<li><a href="#footer"><div>Consultancy</div></a></li>
+												<li><a href="24x7.jsp"><div>24 x 7 Availability</div></a></li>
 											</ul>
 											</li>
 											</ul>

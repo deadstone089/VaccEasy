@@ -4,49 +4,74 @@
 <!DOCTYPE html>
     <html dir="ltr" lang="en-US">
        <head>
-	</head
-	   <body>
+       <body>
+       <section id="page-title" style="background-color: #00e6e6">
+
+			<div class="container clearfix">
+				<br>
+				<ol class="breadcrumb">
+					<li><a href="index.jsp">Home</a></li>
+					
+					<li class="active">BMI Calculator</li>
+				</ol>
+			</div>
+			
+		</section>
       
-		<div class="container">
-		<FORM NAME="BMI" method=POST>
-<TABLE class = "table">
-<TR>
-<TD><DIV ALIGN=CENTER>Your Weight (kg)</DIV></TD>
-<td><INPUT TYPE=TEXT NAME=weight size=35  onFocus="this.form.weight.value=''"> </td>
-</TR>
+		
+			<section id="content">
+   			<div class="content-wrap">
+			
 
-<TR>
-<TD><DIV ALIGN=CENTER>Your Height (cm)</DIV></TD>
+				<div class="container clearfix">
+					
+					<div class="col_two_third col_last nobottommargin">
+						<div class="well well-lg nobottommargin">
+							<form id="login-form" name="login-form" class="nobottommargin" action="/forgot" method="post">
 
-<TD><INPUT TYPE=TEXT NAME=height  size=35 onFocus="this.form.height.value=''"> </TD>
-</TR>
+								<h3>BMI Calculator</h3>
+								<div class="col_full">
+								<table>
+									<tr>
+										<td><label>Your Weight (kg):</label></td>
+										<td><INPUT TYPE=TEXT NAME=weight size=35  onFocus="this.form.weight.value=''"></td>
+										
+									</tr>
+								</table>
+								</div>
 
+								
+									
+									
+								
+								
+								<div class="col_full">
+									<label>Your Height (cm):</label>
+									<INPUT TYPE=TEXT NAME=height  size=35 onFocus="this.form.height.value=''">
+								</div>
+								
+								<div class="col_full">
+									<label>Your BMI:</label>
+									<INPUT TYPE=TEXT NAME=bmi   size=35 >
+								</div>
+								
+								<div class="col_full">
+									<label>My Comment:</label>
+									<INPUT TYPE=TEXT NAME=my_comment size=35>
+								</div>
 
-
-<TR>
-<TD><DIV ALIGN=CENTER>Your BMI</DIV></TD>
-<TD><INPUT TYPE=TEXT NAME=bmi   size=35   ></TD>
-</TR>
-
-    
- <TR>
-<TD><DIV ALIGN=CENTER>My Comment</DIV></TD>
-<TD><INPUT TYPE=TEXT NAME=my_comment size=35></TD>
-</TR>
-
-</TABLE>
-
-<P>
-<INPUT TYPE="button" VALUE="Let's see" onClick="computeform(this.form)">
-<INPUT TYPE="reset"  VALUE="Reset" onClick="ClearForm(this.form)">
-</FORM>
-</div>
-
- 
-   
-     </body>
-	<SCRIPT LANGUAGE="JAVASCRIPT">
-<!-- hide this script tag's contents from old browsers
+								<button type="button" class="btn btn-success" style="background-color:#00e6e6" onClick="computeform(this.form)" >Let's see</button>
+								<button type="button" class="btn btn-success" style="background-color:#00e6e6" onClick="ClearForm(this.form)" >Reset</button>
+								<!-- <INPUT TYPE="button" VALUE="Let's see" onClick="computeform(this.form)">
+								<INPUT TYPE="reset"  VALUE="Reset" onClick="ClearForm(this.form)"> -->
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+ //hide this script tag's contents from old browsers
 
 //Body Mass calculator- by John Scott (johnscott03@yahoo.com)
 //Visit JavaScript Kit (http://javascriptkit.com) for script
@@ -130,6 +155,29 @@ function computeform(form) {
 }
  // -- done hiding from old browsers -->
 </SCRIPT>
+
+ 
+   <!--  <h1>Body Mass Index Calculator</h1>
+    <p>Enter your height: <input type="text" id="height"/>
+        <select type="multiple" id="heightunits">
+            <option value="metres" selected="selected">metres</option>
+            <option value="inches">inches</option>
+        </select>
+         </p>
+    <p>Enter your weight: <input type="text" id="weight"/>
+        <select type="multiple" id="weightunits">
+            <option value="kg" selected="selected">kilograms</option>
+            <option value="lb">pounds</option>
+        </select>
+    </p>
+    <input type="submit" value="computeBMI" onclick="computeBMI();">
+    <h1>Your BMI is: <span id="output">?</span></h1>
+
+    <h2>This means you are: <span id="comment"> ?</span> </h2> 
+    
+     -->
+     
+     </body>
 
     </html>
      <%@ include file="footer.jsp" %>

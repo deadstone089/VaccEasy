@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
     <%@ include file="header.jsp" %>
 <!DOCTYPE html>
 <html>
@@ -15,7 +13,7 @@
 				<ol class="breadcrumb">
 					<li><a href="index.jsp">Home</a></li>
 					
-					<li class="active">Login</li>
+					<li class="active">Forgot</li>
 				</ol>
 			</div>
 			
@@ -27,7 +25,7 @@
 					
 					<div class="col_two_third col_last nobottommargin">
 						<div class="well well-lg nobottommargin">
-							<form id="login-form" name="login-form" class="nobottommargin" action="/forgotpassword" method="post">
+							<form id="login-form" name="login-form" class="nobottommargin" action="/forgot" method="post">
 
 								<h3>Forgot Password</h3>
 
@@ -38,9 +36,16 @@
 
 								<div class="col_full">
 									<label for="login-form-password">Mobile Number:</label>
-									<input type="password" id="login-form-password" name="pass" value="" class="form-control" />
+									<input type="number" id="login-form-password" name="num" value="" class="form-control" />
 								</div>
-
+								<div class="col_full">
+									<label for="login-form-password">Password:</label>
+									<input type="number" id="login-form-password" name="pass" value="" class="form-control" />
+								</div>
+								<div class="col_full">
+									<label for="login-form-password">ReEnter Password:</label>
+									<input type="number" id="login-form-password" name="pass1" value="" class="form-control" />
+								</div>
 								<div class="col_full nobottommargin">
 									<button class="button button-3d nomargin" id="login-form-submit" name="login-form-submit" value="login">Submit</button>
 						

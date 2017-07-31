@@ -1,24 +1,14 @@
 package com.vaccine.service;
 
+import com.vaccine.dao.ForgotPasswordDao;
 
-import static com.vaccine.service.OfyService.ofy;
+public class ForgotPasswordService {
 
-
-import com.vaccine.dao.*;
-import com.vaccine.entity.ForgotPasswordEntity;
-;public class ForgotPasswordService {
-	
-	ForgotPasswordDao udo = new ForgotPasswordDao();
-
-	public boolean checkIfUserAlreadyExist(String email, Long l) {
-		if (ofy().load().type(ForgotPasswordEntity.class).filter(email, l) != null)
-			return true;
-		else
-			return false;
-	}
-
-	public static void savePassword(String email, String pass) {
-		ForgotPasswordDao.save(email, pass);
+	public boolean validate(String email, long phone) {
+		ForgotPasswordDao forgotPasswordDao=new ForgotPasswordDao();
+		
+		return forgotPasswordDao.check(email,phone);
 		
 	}
+
 }

@@ -83,9 +83,9 @@
 <!-- -------------TESTING POINt------------------------------------ -->
 						
 						<br><br><br>
-						<div class="row counters clearfix nobottommargin topmargin-sm common-height">
-
-					<div class="col-md-3 col-sm-6 dark center col-padding" style="background-image: url('images/about-us/counters/1.jpg');">
+<!-- 						<div class="row counters clearfix nobottommargin topmargin-sm common-height">
+ -->
+					<!-- <div class="col-md-3 col-sm-6 dark center col-padding" style="background-image: url('images/about-us/counters/1.jpg');">
 						<div>
 							<div class="overlay"></div>
 							<div style="position: relative; z-index: 1;">
@@ -128,7 +128,7 @@
 							</div>
 						</div>
 					</div>
-
+ -->
 				
 <!-- 
 				<div class="section notopmargin" style="background: #FFF url('images/about-us/1.jpg') right center no-repeat / cover;">
