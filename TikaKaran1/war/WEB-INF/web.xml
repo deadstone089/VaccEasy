@@ -56,7 +56,32 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>AskQuestion</servlet-name>
 		<url-pattern>/AskQuestion</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>googlesignin</servlet-name>
+		<servlet-class>com.vaccine.Controller.GoogleSignInController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>googlesignin</servlet-name>
+		<url-pattern>/gsigninmobno</url-pattern>
+	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>googlesignin1</servlet-name>
+		<servlet-class>com.vaccine.Controller.GoogleSignInController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>googlesignin1</servlet-name>
+		<url-pattern>/googlesignin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>googlesignin2</servlet-name>
+		<servlet-class>com.vaccine.Controller.GoogleDetailsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>googlesignin2</servlet-name>
+		<url-pattern>/gsignin</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>Image_demo</servlet-name>
@@ -84,7 +109,9 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>dashboard_jsp</servlet-name>
 		<url-pattern>/dashboard_jsp</url-pattern>
 	</servlet-mapping>
-	
+	<session-config>
+		<session-timeout> 20 </session-timeout>
+	</session-config>
 	
 	 <servlet>
   <servlet-name>SystemServiceServlet</servlet-name>

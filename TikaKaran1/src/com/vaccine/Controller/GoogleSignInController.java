@@ -7,16 +7,19 @@ import javax.servlet.http.*;
 import com.vaccine.service.*;
 
 @SuppressWarnings("serial")
-public class SignupController extends HttpServlet {
+public class GoogleSignInController extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse resp) throws IOException {
 		try{
+			 HttpSession sess=request.getSession();
 			LoginDetailService loginDetailService = new LoginDetailService();
 			ParentDetailService parentDetailService=new ParentDetailService();
-			String email=request.getParameter("email");
-			String fName= request.getParameter("Fname");	
-			String lName=request.getParameter("Lname");
-			long number=Long.parseLong(request.getParameter("phone"));
-			String pass=request.getParameter("pass");
+			long number=Long.parseLong(request.getParameter("mobno"));
+			
+			String pass = request.getParameter("pass");
+			String fName = (String) sess.getAttribute("first_Name");
+			String lName = (String) sess.getAttribute("last_Name");
+			String email = (String) sess.getAttribute("email_id");
+			
 
 			 
 			if(loginDetailService.alreadyExist(email))
@@ -27,7 +30,7 @@ public class SignupController extends HttpServlet {
 			
 			else
 			{
-				 HttpSession sess=request.getSession();
+				 
 				sess.setAttribute("email",email);
 				sess.setAttribute("fName", fName);
 				sess.setAttribute("lName", lName);
