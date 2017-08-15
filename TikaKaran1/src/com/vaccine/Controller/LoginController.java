@@ -24,15 +24,8 @@ public class LoginController extends HttpServlet {
 
 			String email = req.getParameter("email");
 			String password = req.getParameter("pass");
-			String check = req.getParameter("check");
-			if(check=="checked")
-			{
-			    Cookie id = new Cookie("email", email);
-			    Cookie pass = new Cookie("pass",password);
-			    id.setMaxAge(24*60*60*365);
-			    resp.addCookie(id); 
-			    resp.addCookie(pass);
-			}
+			
+			
 
 			if (loginService.check(email, password)) {
 				HttpSession sess = req.getSession();

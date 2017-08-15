@@ -6,7 +6,7 @@
 	import="com.google.appengine.api.blobstore.BlobstoreServiceFactory"%>
 <%@ page import="com.google.appengine.api.blobstore.BlobstoreService"%>
     
-
+<%try{ %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -116,7 +116,7 @@
                <%= sess1.getAttribute("number") %> 
             </div>
           </div>
-
+	</form>
         
    
       <br>          
@@ -158,12 +158,13 @@
   </div>
 </div>
 </div>
-
-	<!-- Footer
-		============================================= -->
-		<!-- Footer
-		============================================= -->
+</div>
+</div>
+	
 		
 </body>
 </html>
 <%@ include file="footer.jsp"%>
+<%}catch(Exception e){
+	response.sendRedirect("404.jsp");
+}

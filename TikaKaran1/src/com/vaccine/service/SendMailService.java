@@ -25,7 +25,7 @@ public class SendMailService{
   private static Logger log = Logger.getLogger(SendMailService.class.getCanonicalName());
   
   //mail id from which the mail has to be sent
-  private static String fromAddress = "parth.chopra04@gmail.com";
+  private static String fromAddress = "tikakaran@gmail.com";
   
   public void send(String toAddress, String subject, String msgBody)
       throws IOException {

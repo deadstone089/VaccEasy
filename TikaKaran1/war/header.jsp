@@ -49,7 +49,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Tikakaran</title>
+	<title>VaccEasy</title>
 
 	<style>
 		.form-control.error { border: 2px solid red; }
@@ -126,7 +126,7 @@
 									<ul class="mega-menu-column col-md-8">
 										<li class="mega-menu-title"><a href="#"><div>Services Offered</div></a>
 											<ul>
-												<li><a href="vaccilocator.jsp"><div>Vaccilocator</div></a></li>
+												<li><a href="#"><div>Vaccilocator</div></a></li>
 												<li><a href="#"><div>Vacci Reminder</div></a></li>
 												<li><a href="schedule.jsp"><div>Vacci Scheduler</div></a></li>
 												<li><a href="bmi.jsp"><div>BMI Calculator</div></a></li>

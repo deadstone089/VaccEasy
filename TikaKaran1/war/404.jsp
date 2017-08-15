@@ -33,7 +33,7 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
-		ii
+
 
 		<section id="slider" class="slider-parallax full-screen dark error404-wrap">
 

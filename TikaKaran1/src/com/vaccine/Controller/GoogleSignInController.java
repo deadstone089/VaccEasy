@@ -13,7 +13,7 @@ public class GoogleSignInController extends HttpServlet{
 			 HttpSession sess=request.getSession();
 			LoginDetailService loginDetailService = new LoginDetailService();
 			ParentDetailService parentDetailService=new ParentDetailService();
-			long number=Long.parseLong(request.getParameter("mobno"));
+			long number=Long.parseLong(request.getParameter("phone"));
 			
 			String pass = request.getParameter("pass");
 			String fName = (String) sess.getAttribute("first_Name");

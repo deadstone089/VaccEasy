@@ -33,11 +33,11 @@
 
 								<div class="col_full">
 									<label for="login-form-password">Mobile Number:</label>
-									<input type="number" id="login-form-password" name="num" value="" class="form-control" />
+									<input type="number" id="login-form-password" name="phone" value="" class="form-control" />
 								</div>
 								<div class="col_full">
 									<label for="login-form-password">Password:</label>
-									<input type="password" id="login-form-password" name="pas" value="" class="form-control" />
+									<input type="password" id="login-form-password" name="pass" value="" class="form-control" />
 								</div>
 								
 								<div class="col_full nobottommargin">
