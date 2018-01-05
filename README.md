@@ -1,6 +1,6 @@
 # VaccEasy
 The main aim of this website is to tell its users about the importance of vaccination for newly born infants. It is made with an aim to help the parents so that they can keep a track of their infant's accination.
-This web application is made by using canvas template which can be visited from the following link:- http://themes.semicolonweb.com/html/canvas/demo-medical.php
+This web application is made by using canvas template which can be visited from the following link:- http://themes.semicolonweb.com/html/canvas/demo-medical.php .
 This web application has following features:- 
    (i)   Vaccilocator:- This featues allows the users to discover various vaccination centers near him/her on google maps. This feature uses google maps api.
    (ii)  VacciSchedular:- This feature allows the users to make a schedule foe infant's vaccination using our mechanism using the infant's date of birth. This includes a general vaccination schedule on the vaccischedular page.
